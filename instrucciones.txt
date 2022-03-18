@@ -1,0 +1,19 @@
+instalacion:
+
+entrar al directorio del proyecto con cmd: cd nombre de la ruta copleta del proyecto
+
+ejecutar 
+npm install
+npm init
+npm install mysql
+npm intall ejs
+npm install express
+npm install express-session
+npm install md5
+npm install url
+npm install dotenv
+
+
+correr aplicacion:
+
+node app.js

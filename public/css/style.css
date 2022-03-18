@@ -1,221 +1,433 @@
 body{
-  font-family: 'Roboto';  
-  background-color: #f5f5f5;
-  margin: auto;
-  text-align: center;
+        padding-top: 70px;
+
+	background: #fffff0; /* Old browsers */
+
+}
+.logos_GnuLinux{
+	display: block;
+	margin: 0 auto;
+}
+footer{
+	background-color: black;
 }
 
-/* Login form */
-.login-form, .contenedor {
-  width: 300px;
-  margin: 0 auto;
-}
-.login-form h1 {
-  text-align: center;
-  color:midnightblue ;
-  font-size: 28px;
-  padding: 70px 0 10px 0;
-}
-.login-form input[type="password"],
-.login-form input[type="text"] {
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #ced4da;
-  margin-bottom: 10px;
-  box-sizing:border-box;
+@media handheld, only screen and (max-width: 767px) {
+#imagen{
+display:none;
 }
 
-/* Estilos boton LOGIN*/
-.btn-login{
-  width: 100%;
-  padding: 15px;
-  background-color: #6f42c1;
-  border: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: large;
-  color: #ffffff;
-}
-.btn-login:hover,.btn-login:active{
-  color:#fff;
-  background-color:#61428f;
-  border-color:#61428f
-}
-.btn-login:focus{
-  box-shadow:0 0 0 3px rgba(121,82,179,0.25)
+#imagen2{
+  display:none;
+  }
 }
 
-/* Estilos boton REGISTER*/
-.btn-register{
-  width: 100%;
-  padding: 15px;
-  background-color: #34D399;
-  border: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: large;
-  color: #ffffff;
-  margin-top: 20px;
-  /* Para dar la apariencia de un boton */
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  text-decoration: none;  
+@media only screen and (max-width: 1023px) {
+#imagen{
+display:none;
 }
-.btn-register:hover,.btn-register:active{
-  color:#fff;
-  background-color: #10B981;
-  border-color:#10B981
-;
+
+#imagen2{
+  display:none;
+  }
 }
-.btn-register:focus{
-  box-shadow:0 0 0 3px #10B981;
+
+#imagen {
+  float: left;
+}
+
+
+#imagen2 {
+  float: right;
 }
 
 
 
-/* Estilos de link para ir a LOGIN*/
-.a-login:link, .a-login:visited {
-  background-color: white;
-  color: black;
-  border: 2px solid #10B981;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+
+
+.bs-example{
+        font-family: sans-serif;
+        position: relative;
+        margin: 50px;
+}
+.typeahead, .tt-query, .tt-hint {
+        border: 2px solid #CCCCCC;
+        border-radius: 8px;
+        font-size: 24px;
+        height: 30px;
+        line-height: 30px;
+        outline: medium none;
+        padding: 8px 12px;
+        width: 396px;
+}
+.typeahead {
+        background-color: #FFFFFF;
+}
+.typeahead:focus {
+        border: 2px solid #0097CF;
+}
+.tt-query {
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.tt-hint {
+        color: #999999;
+}
+.tt-dropdown-menu {
+        background-color: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        margin-top: 12px;
+        padding: 8px 0;
+        width: 422px;
+}
+.tt-suggestion {
+        font-size: 24px;
+        line-height: 24px;
+        padding: 3px 20px;
+}
+.tt-suggestion.tt-is-under-cursor {
+        background-color: #0097CF;
+        color: #FFFFFF;
+}
+.tt-suggestion p {
+        margin: 0;
 }
 
-.a-login:hover, .a-login:active {
-  background-color: #10B981;
+
+
+.radioinverted {
+ 
+filter: invert(100%);
+ 
+}
+
+.radionormal {
+ 
+filter: invert(0%);
+ 
+}
+
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.black-background {
+background-color:#000000;
+}
+
+.white {
+color:#ffffff;
+}
+
+.li_subcat{cursor:pointer;width: 100px;height: 120px;border-bottom: 1px solid #dcdcdc;margin:0px 10px 10px 10px;list-style-type: none;float: left;background-repeat: no-repeat;}
+.li_subcat:hover{background-color: #f3f3f3; }
+.label_option{font-family: verdana;font-weight: bold;text-align: center;margin-top:95px;}
+#select_categoria{outline: none;overflow:hidden;border-style: none;height: auto;margin:0;}
+.option_categorias{text-align: center;background-color: #dcdcdc;margin-top: 5px; padding-top:15px;cursor: pointer;}
+.option_categorias:hover{background-color: #58acfa;color:#fff;}
+.text_option{font-family: arial;}
+.label_categoria{margin:auto;}
+.Descripcion_nuevo_ticket{margin:20px 5px 20px 20px}
+.Descripcion_nuevo_ticket_b{display: none;margin:20px 5px 20px 20px}
+.title_subcategoria{margin:15px 20px 0px 25px;padding: 0;color:#f0f0f0}
+.title_generacion{margin:15px 0px 0px 10px;padding: 0;color:#000}
+#contenedor_info{float: left;position: relative;width: 27%;margin:10px 10px 10px 5px;border:1px solid #dfdfdf;}
+#contenedor_sub{float:left;position: relative;width: 50%;margin:10px 10px 10px 20px;border:1px solid #dcdcdc}
+#contenedor_cat{float: left;position: relative;width:auto;margin:10px 10px 10px 20px;border:1px solid #dcdcdc;padding: 10px 10px}
+#contenedor_mensaje{width:100%;float: right;margin:auto;border-top:1px solid #dcdcdc;display: none}
+#contenedor_input_mensaje{display: none}
+#contenedor_input_info{display: none;width: 80%;margin:auto;}
+#select_subcategoria{margin-left:20px;}
+.container_a{background:#fff;border:2px solid #dfdfdf;border-radius:4px;width: 40%;float: left;margin-bottom:100px;margin-right: 20px;}
+.container_b{background:#fff;border:2px solid #dfdfdf;border-radius:4px;width:50%;float: left;position: relative;margin-bottom:100px;}
+.container_c{background:#fff;border:2px solid #dfdfdf;border-radius:4px;width:50%;float: left;position: relative;margin-bottom:200px;clear:left;clear: right;}
+.container_main{width: 100%;float:left;margin-left:5% }
+#containerc{background:#fff;border:3px solid #dfdfdf;width:54%;float: left;position: relative;margin-bottom:200px; }
+#container_data_subprocess{border:1px solid #dcdcdc;width:90%;height: auto;margin:auto;}
+.info_mensaje{float:left;margin:5px;}
+.info_mensaje_detalles{float: left;clear: left}
+.serie_info{float: left;clear: left}
+.container_accion{float: left}
+.subtitulos_infomensaje{font-weight: bold}
+#fiel{float:left;margin-left:10px;width:100%;margin-bottom: 20px}
+#fiel_redes{float:left;margin-left:10px;width:100%;margin-bottom: 20px}
+.text_insumos_redes{width: 115px; }
+
+
+
+/* Botón propio
+-------------------------------------------------- */
+
+/* Redefine los estilos de .btn */
+/* Modificar el texto y el color de fondo en los tres estados
+   principales del botón: default, hover y active. */
+.btn-ttc,
+.btn-ttc:hover,
+.btn-ttc:active {
   color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #000000;
 }
 
-/* Estilos de link para realizar el LOGOUT*/
-.a-logout:link, .a-logout:visited {
-  background-color: white;
-  color: black;
-  border: 2px solid #F87171;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+/* Aplicar gradientes de colores */
+/* Nota: no se muestran aquí todos los gradientes que tendrás que
+   definir para los diferentes navegadores. */
+.btn-ttc {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
 }
 
-.a-logout:hover, .a-logout:active {
-  background-color: #F87171;
+/* Estilos del estado :hover del botón */
+/* Uno de los estilos más sencillos y eficaces para el estado :hover
+   consiste en subir hacia arriba ligeramente la imagen de fondo del
+   botón, pero puedes definir otros estilos adicionales si quieres. */
+.btn-ttc:hover {
+  background-position: 0 -15px;
+}
+
+
+
+
+
+.btn-mora,
+.btn-mora:hover,
+.btn-mora:active {
   color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #6D7FC0;
 }
 
-/* Estilos boton CANCELAR*/
-.btn-cancel{
-  width: 50%;
-  padding: 15px;
-  background-color: #9CA3AF;
-  border: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-weight: bold;
-  font-size:medium;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 20px;
-  /* Para dar la apariencia de un boton */
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  text-decoration: none;  
-}
-.btn-cancel:hover,.btn-cancel:active{
-  color:#fff;
-  background-color: #6B7280;
-  border-color:#6B7280
-;
-}
-.btn-cancel:focus{
-  box-shadow:0 0 0 3px #6B7280;
+/* Aplicar gradientes de colores */
+/* Nota: no se muestran aquí todos los gradientes que tendrás que
+   definir para los diferentes navegadores. */
+.btn-mora {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
 }
 
-/* Estilos boton GUARDAR*/
-.btn-save{
-  width: 50%;
-  padding: 15px;
-  background-color: #1D4ED8;
-  border: 0;
-  box-sizing: border-box;
-  cursor: pointer;
-  font-weight: bold;
-  font-size:medium;
-  color: #ffffff;
-  margin-top: 20px;
-  /* Para dar la apariencia de un boton */
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  text-decoration: none;  
-}
-.btn-save:hover,.btn-save:active{
-  color:#fff;
-  background-color: #1E3A8A;
-  border-color:#1E3A8A;
-}
-.btn-save:focus{
-  box-shadow:0 0 0 3px #1E3A8A;
+/* Estilos del estado :hover del botón */
+/* Uno de los estilos más sencillos y eficaces para el estado :hover
+   consiste en subir hacia arriba ligeramente la imagen de fondo del
+   botón, pero puedes definir otros estilos adicionales si quieres. */
+.btn-mora:hover {
+  background-position: 0 -15px;
 }
 
-/* form User Registration */
-.register-form{
-  width: 400px;
+
+.btn-verdusco,
+.btn-verdusco:hover,
+.btn-verdusco:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0DB9A7;
+}
+
+/* Aplicar gradientes de colores */
+/* Nota: no se muestran aquí todos los gradientes que tendrás que
+   definir para los diferentes navegadores. */
+.btn-verdusco {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+}
+
+/* Estilos del estado :hover del botón */
+/* Uno de los estilos más sencillos y eficaces para el estado :hover
+   consiste en subir hacia arriba ligeramente la imagen de fondo del
+   botón, pero puedes definir otros estilos adicionales si quieres. */
+.btn-verdusco:hover {
+  background-position: 0 -15px;
+}
+
+
+
+
+
+
+.btn-amarillo,
+.btn-amarillo:hover,
+.btn-amarillo:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #B6A807;
+}
+
+/* Aplicar gradientes de colores */
+/* Nota: no se muestran aquí todos los gradientes que tendrás que
+   definir para los diferentes navegadores. */
+.btn-amarillo {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+}
+
+/* Estilos del estado :hover del botón */
+/* Uno de los estilos más sencillos y eficaces para el estado :hover
+   consiste en subir hacia arriba ligeramente la imagen de fondo del
+   botón, pero puedes definir otros estilos adicionales si quieres. */
+.btn-amarillo:hover {
+  background-position: 0 -15px;
+}
+
+
+
+
+
+
+.btn-morado,
+.btn-morado:hover,
+.btn-morado:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #B3759C;
+}
+
+/* Aplicar gradientes de colores */
+/* Nota: no se muestran aquí todos los gradientes que tendrás que
+   definir para los diferentes navegadores. */
+.btn-morado {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+}
+
+/* Estilos del estado :hover del botón */
+/* Uno de los estilos más sencillos y eficaces para el estado :hover
+   consiste en subir hacia arriba ligeramente la imagen de fondo del
+   botón, pero puedes definir otros estilos adicionales si quieres. */
+.btn-morado:hover {
+  background-position: 0 -15px;
+}
+
+
+.btn-gris,
+.btn-gris:hover,
+.btn-gris:active {
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #6A6867;
+}
+
+/* Aplicar gradientes de colores */
+/* Nota: no se muestran aquí todos los gradientes que tendrás que
+   definir para los diferentes navegadores. */
+.btn-gris {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+}
+
+/* Estilos del estado :hover del botón */
+/* Uno de los estilos más sencillos y eficaces para el estado :hover
+   consiste en subir hacia arriba ligeramente la imagen de fondo del
+   botón, pero puedes definir otros estilos adicionales si quieres. */
+.btn-gris:hover {
+  background-position: 0 -15px;
+}
+
+
+.btn-success{
+  float: left !important;
+}
+
+.btn-cafe,
+.btn-cafe:hover,
+.btn-cafe:active {
+  color: white;
+  width:60%;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #884B2D;
+}
+
+/* Aplicar gradientes de colores */
+/* Nota: no se muestran aquí todos los gradientes que tendrás que
+   definir para los diferentes navegadores. */
+.btn-cafe {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+}
+
+/* Estilos del estado :hover del botón */
+/* Uno de los estilos más sencillos y eficaces para el estado :hover
+   consiste en subir hacia arriba ligeramente la imagen de fondo del
+   botón, pero puedes definir otros estilos adicionales si quieres. */
+.btn-cafe:hover {
+  background-position: 0 -15px;
+}
+
+
+
+.btn-hijos,
+.btn-hijos:hover,
+.btn-hijos:active {
+  color: white;
+  width:60%;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #33FF83;
+}
+
+/* Aplicar gradientes de colores */
+/* Nota: no se muestran aquí todos los gradientes que tendrás que
+   definir para los diferentes navegadores. */
+.btn-hijos {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+}
+
+/* Estilos del estado :hover del botón */
+/* Uno de los estilos más sencillos y eficaces para el estado :hover
+   consiste en subir hacia arriba ligeramente la imagen de fondo del
+   botón, pero puedes definir otros estilos adicionales si quieres. */
+.btn-hijos:hover {
+  background-position: 0 -15px;
+}
+
+
+
+
+
+.btn-naranja,
+.btn-naranja:hover,
+.btn-naranja:active {
+  color: white;
+  width:60%;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #FF5733;
+}
+
+/* Aplicar gradientes de colores */
+/* Nota: no se muestran aquí todos los gradientes que tendrás que
+   definir para los diferentes navegadores. */
+.btn-naranja {
+  background-repeat: repeat-x;
+  background-image: linear-gradient(top, #009ED2 0%, #007DA7 100%);
+}
+
+/* Estilos del estado :hover del botón */
+/* Uno de los estilos más sencillos y eficaces para el estado :hover
+   consiste en subir hacia arriba ligeramente la imagen de fondo del
+   botón, pero puedes definir otros estilos adicionales si quieres. */
+.btn-naranja:hover {
+  background-position: 0 -15px;
+}
+
+
+.table-condensed{
+  font-size: 10px;
+  position: fixed; 
+  left: 10px; 
+  top: 10px;
+}
+
+.center_div{
   margin: 0 auto;
-  padding: 0px 20px 60px 20px;
-  margin-top: 35px;
-  font-family: roboto;  
-  text-align: left !important;
- box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); 
+  width:80% /* value of your choice which suits your alignment */
 }
 
-.register-form h1 {
-  text-align: left;
-  color:midnightblue ;
-  font-size: 22px;
-  padding: 70px 0 10px 0;
-}
-.register-form input[type="password"],
-.register-form input[type="text"] {
-  width: 100%;
-  padding: 15px;
-  border: 1px solid #ced4da;
-  margin-bottom: 10px;
-  box-sizing:border-box;
-}
 
-/* Estilos para el select dropdown */
-.select-css {
-  display: block;
-  font-size: 16px;  
-  font-weight: 400;  
-  line-height: 1.3;
-  padding: .4em 1.4em .3em .8em;
-  width: 400px;
-  max-width: 100%; 
-  box-sizing: border-box;
-  margin: 0;  
-  background-color: #f5f5f5;  
- }
- .select-css::-ms-expand {
-  display: none;
- }
- .select-css:hover {
-  border-color: #888;
- }
- .select-css:focus {
-  border-color: #aaa;
-  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-  box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: #222; 
-  outline: none;
- }
- .select-css option {
-  font-weight:normal;
- }
+
+
