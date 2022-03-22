@@ -12,6 +12,211 @@ footer{
 	background-color: black;
 }
 
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(19, 8, 119);
+}
+
+ul.topnav li {
+  float: left;
+}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: rgb(9, 4, 80);
+}
+
+ul.topnav li a.active {
+  background-color: #4CAF50;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+
+  ul.topnav li.right,
+  ul.topnav li {
+      float: none;
+  }
+}
+
+
+.modal-login {
+  width: 320px;
+  margin: 30px auto;
+}
+
+.modal-login .modal-content {
+  border-radius: 1px;
+  border: none;
+}
+
+.modal-login .modal-header {
+  position: relative;
+  justify-content: center;
+  background: #f2f2f2;
+}
+
+.modal-login .modal-body {
+  padding: 30px;
+}
+
+.modal-login .modal-footer {
+  background: #f2f2f2;
+}
+
+.modal-login h4 {
+  text-align: center;
+  font-size: 26px;
+}
+
+.modal-login label {
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.modal-login .form-control,
+.modal-login .btn {
+  min-height: 38px;
+  border-radius: 2px;
+}
+
+.modal-login .hint-text {
+  text-align: center;
+}
+
+.modal-login .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.modal-login .checkbox-inline {
+  margin-top: 12px;
+}
+
+.modal-login input[type="checkbox"] {
+  margin-top: 2px;
+}
+
+.modal-login .btn {
+  min-width: 100px;
+  background: #3498db;
+  border: none;
+  line-height: normal;
+}
+
+.modal-login .btn:hover,
+.modal-login .btn:focus {
+  background: #248bd0;
+}
+
+.modal-login .hint-text a {
+  color: #999;
+}
+
+.trigger-btn {
+  display: inline-block;
+  margin: 100px auto;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 29px;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding: 6px;
+  position: relative;
+}
+
+.switcher {
+  background-color: rgb(59, 47, 47);
+  position: absolute;
+  top: 5px;
+  left: 2px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+.moon {
+  color: #b98b35;
+}
+
+.sun {
+  color: #dcdf2d;
+}
+
+.checkbox:checked+.label .switcher {
+  transform: translateX(24px);
+}
+
+body.dark {
+  background-color: #1e272e;
+}
+
+body.dark .bar {
+  background-color: rgb(11, 8, 201);
+}
+
+body.dark p {
+  color: #fff;
+}
+
+body.dark h2 {
+  color: rgb(86, 88, 248);
+}
+
+body.dark nav {
+  background-color: #1e272e;
+  box-shadow: 2px 3px 2px #181616;
+}
+
+body.dark ul {
+  background-color: #1e272e;
+}
+
+body.dark .name {
+  color: var(--primary-color);
+}
+
+body.dark .role {
+  color: var(--secondary-color);
+}
+
+body.dark footer {
+  color: #fff;
+  border-top: 1px solid #111010;
+  box-shadow: 0px -2px 3px #111010;
+}
+topnav.dark {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
 @media handheld, only screen and (max-width: 767px) {
 #imagen{
 display:none;

@@ -7,21 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="resources/css/bootstrap.css">
   <link rel="stylesheet" href="resources/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
   <script src="resources/js/jspdf.umd.min.js"></script>
   <script src="resources/js/jspdf.plugin.autotable.js"></script>
   <script>
     //Exportacion del reporte en
-  function ExportarPDF(){
-  window.jsPDF = window.jspdf.jsPDF;
-  const doc = new jsPDF({
-orientation: "portrait",
-unit: "in",
-format: [11, 13]
-});
-doc.autoTable({ html: '#tabla_reportes' })
-doc.save('Reporte.pdf')
-}
-</script>
+    function ExportarPDF() {
+      window.jsPDF = window.jspdf.jsPDF;
+      const doc = new jsPDF({
+        orientation: "portrait",
+        unit: "in",
+        format: [11, 13]
+      });
+      doc.autoTable({
+        html: '#tabla_reportes'
+      })
+      doc.save('Reporte.pdf')
+    }
+  </script>
   <title>H.I.S&nbsp;<%= name %></title>
   <style>
   </style>
@@ -33,9 +36,20 @@ doc.save('Reporte.pdf')
     <!-- Si hay login -->
     <% if (login) { %>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #000066">
+
       <!-- Barra de navegacion responsive -->
       <div class="container-fluid">
         <div class="navbar-header">
+          <ul class="topnav">
+            <div class="theme-switch">
+              <input type="checkbox" class="checkbox" id="checkbox" />
+              <label for="checkbox" class="label">
+                <ion-icon name="sunny-outline" class="sun"></ion-icon>
+                <ion-icon name="moon-outline" class="moon"></ion-icon>
+                <div class="switcher"></div>
+              </label>
+            </div>
+          </ul>
           <button type="button" class="navbar-toggle" data-toggle="collapse"
             data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">toggle navigation</span>
@@ -88,6 +102,7 @@ doc.save('Reporte.pdf')
                   <% } %>
                 </select>
               </div>
+              <br>
               <input type="submit" class="btn btn-success" name="reg_enviar" value="Generar">
               <input type="button" class="btn btn-info" name="exportar" onclick="ExportarPDF()" value="Exportar">
             </form>
@@ -100,6 +115,7 @@ doc.save('Reporte.pdf')
   <% 
   if(titulos){
     %>
+
   <table id="tabla_reportes" class="table table-hover table-striped table-bordered">
     <thead>
       <tr>
@@ -118,7 +134,7 @@ doc.save('Reporte.pdf')
       <%
       for(x=0; x< resultado.length; x++){
         %>
-        <tr>
+      <tr>
         <%
         for(y=0; y< titulos.length; y++){
       %>
@@ -126,19 +142,29 @@ doc.save('Reporte.pdf')
         <%
       }
       %>
-    </tr>
+      </tr>
       <%
     }
       %>
     </tbody>
   </table>
+
   <%
  }
 } else { %>
   <!-- Si no hay login, retornamos al directorio raiz -->
   <script type="text/javascript">
+    type = "module"
     window.location.href = "login";
+    const checkbox = document.querySelector("#checkbox");
+
+    checkbox.addEventListener("change", () => {
+      // Toggle website theme
+      document.body.classList.toggle("dark");
+    });
   </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <% } %>
   </div>
 </body>
